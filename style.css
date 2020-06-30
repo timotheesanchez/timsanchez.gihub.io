@@ -1,0 +1,226 @@
+
+
+body{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+img{
+  background-color: grey;
+}
+
+.container{
+  padding: 70px 7%;
+}
+
+ul{ /* Pour enlever les points de l'espacement devant une liste */
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+h1, h2, h3, h4, h5 {
+  width: 100%;
+}
+
+.w-50{
+  width: 50%;
+
+}
+
+.w-75{
+  width: 75%;
+}
+
+.full{
+  width: 100%;
+}
+
+.center{
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+section{
+  min-height: 10vh;
+  width: 100%;
+}
+
+.container > *{  
+  min-height: 50px;
+  min-width: 50px;
+}
+
+.container img{
+  border: 2px solid grey;
+  background-color: lightgrey;
+}
+
+.container > div {
+  border: 2px dashed #F7C324;
+  background-color: #fbe192;
+  min-height: 200px;
+}
+
+.container > div > * {
+   background-color: #B3ACFA;
+   border: 2px solid #6559F4;
+}
+
+
+
+
+
+
+
+
+
+
+
+#hero .container{ /* cible uniquement le container du hero */
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+#hero{
+  background-image: url(https://s3.amazonaws.com/media-p.slid.es/uploads/1269590/images/7421866/undraw_counting_stars_rrnl.png);
+ background-size: 60%;
+ background-repeat: no-repeat;
+ background-position: right;
+}
+
+
+#about .container{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+#about img{
+  height: 250px;
+  background-color: transparent;
+}
+
+#about, #cv, #contact{
+  background-color: #EAFBFF;
+}
+
+#skill .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#skill .container > div {
+  flex-grow: 1;
+  margin-right: 30px;
+  
+}
+
+#cv .container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cv .container div{ 
+  flex-grow: 1;
+  min-width: 250px;
+}
+
+#projet .container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap : wrap;
+  align-items: center;
+  height: 50px;
+}
+
+.progress-line{
+  height: 20px;
+  width: 70%;
+  background-color: white;
+}
+
+.progress{
+  background-color: green;
+  height: 100%;
+  width: 20%;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card img{
+  height: 100px;
+  width: 100px;
+  margin: 20px 0px;
+  border-radius: 50%;
+}
+
+.card{
+  text-align: center;
+  width: 30%;
+}
+
+
+/* style responsive */
+
+@media (max-width: 767px) {
+  
+  .container{
+    margin: 50px 3%;
+    justify-content: center !important;
+  }
+  
+  #hero{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  
+  #hero .container {
+    align-items: flex-end;
+    height: 50vh;
+  }
+  
+  #hero .container div {
+    width: 100%;
+  }
+  
+  #about .container p{
+    width: 100%;
+  }
+  
+  #skill .container div{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  .progress-line{
+    width: 100%;
+  }
+  .card{
+    width: 100%;
+  }
+  
+}
